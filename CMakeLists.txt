@@ -1,0 +1,19 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.27)
+PROJECT(VulkanLearning)
+
+SET(CMAKE_CXX_STANDARD 20)
+
+FIND_PACKAGE(Vulkan REQUIRED)
+FIND_PACKAGE(glfw3 REQUIRED)
+FIND_PACKAGE(glm REQUIRED)
+
+ADD_EXECUTABLE(VL
+    src/main.cpp
+    src/VulkanApplication.cpp
+)
+
+TARGET_LINK_LIBRARIES(VL PRIVATE
+    Vulkan::Vulkan
+    glfw
+    glm
+)

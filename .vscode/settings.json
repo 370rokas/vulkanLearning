@@ -1,0 +1,10 @@
+{
+    "explorer.excludeGitIgnore": true,
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "iostream": "cpp",
+        "stdexcept": "cpp",
+        "vector": "cpp",
+        "cstring": "cpp"
+    }
+}
